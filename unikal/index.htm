@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soz = 'alabaş';
+
+        function unikalSimvollar(soz) {
+        const simvollar = [...soz];
+        
+        const unikalSimvollar = simvollar.filter(simvol => 
+            simvollar.indexOf(simvol) === simvollar.lastIndexOf(simvol)
+        );
+
+        console.log( unikalSimvollar.join(', '));
+        console.log(  unikalSimvollar.length);
+    }
+
+    unikalSimvollar('alabaş');       
+    </script>
+</body>
+</html>
